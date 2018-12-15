@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>UIDS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Menú</h3>
+  <a href="/uids" class="w3-bar-item w3-button">Inicio</a>
+  <a href="/uids/international_reserves" class="w3-bar-item w3-button">Reservas internacionales</a>
+  <a href="/uids/interest_rates" class="w3-bar-item w3-button">Tasas de interés</a>
+  <a href="/uids/exchange_rate" class="w3-bar-item w3-button">Tipos de cambio</a>
+  <a href="/uids/udis" class="w3-bar-item w3-button">UIDS</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+
+<div class="w3-container w3-teal">
+  {% block title %}
+    <h1>Banxico</h1>
+  {% endblock %}
+</div>
+
+<div class="w3-container">
+    {% block content %}
+    {% endblock %}
+</div>
+
+</div>
+
+</body>
+</html>

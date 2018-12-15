@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+<h1>Tasas de interés Banxico</h1>
+{% endblock %}
+
+{% block content %}
+
+{% for c in info %}
+    <h5>{{ c.title }}</h5>
+    <p>Valor: {{ c.obs_value }}</p>
+    <p>Periodo de tiempo: {{ c.time_period }}</p>
+    <hr>
+{% endfor %}
+{% endblock %}
