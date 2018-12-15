@@ -76,9 +76,11 @@ def exchange_rate(request):
 def udis(request):
     wsdl = 'http://www.banxico.org.mx/DgieWSWeb/DgieWS?WSDL'
     client = zeep.Client(wsdl=wsdl)
+    credit_value = 0.0
     with client.settings():
         result = client.service.udisBanxico()
         xml_tree = ET.fromstring(result)
         res = xml_tree.find('.//*[@IDSERIE="SP68257"]/*')
         data = res.attrib
-    return render(request, 'uids/udis.html', {"time_period": data["TIME_PERIOD"], "value": data["OBS_VALUE"]})
+        credit_value = float(data["OBS_VALUE"]) * 25000
+    return render(request, 'uids/udis.html', {"time_period": data["TIME_PERIOD"], "value": data["OBS_VALUE"], "credit": credit_value})
