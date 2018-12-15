@@ -1,6 +1,6 @@
 # Consulta de datos Banxico para el desafío Cumplo
 Sistema desarrollado para entrevista de trabajo en Cumplo.  
-Desarrollador: **Agustín Torres Munguía.** . 
+Desarrollador: **Agustín Torres Munguía.**     
 Fecha: **17 de diciembre de 2018.**
 
 ## Tecnología utilizada
