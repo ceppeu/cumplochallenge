@@ -9,6 +9,7 @@ Liga principal: **http://localhost:8000/uids/**
 - pip 18.1
 - Django 2.1.4
 - mysqlclient 1.3.14
+- MySQL 8.0.13
 - zeep 3.1.0
 - lxml 4.2.5
 
